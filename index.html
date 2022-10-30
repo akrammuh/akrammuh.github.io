@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGLaundry</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/laun.png">
+
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo">SIGLaundry</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">SIGLaundry</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./assets/qgis2web_2022_10_27-16_09_08_804838/petaa.html" class="navbar-link"
+              data-nav-toggler>Peta/lokasi</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="tentangkami.html" class="navbar-link" data-nav-toggler>Tentang kami</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="sejarah.html" class="navbar-link" data-nav-toggler>Sejarah</a>
+          </li>
+
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Login / Register</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- 
+        - #HERO
+      -->
+
+  <section class="hero" id="home" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+    <div class="container">
+
+      <div class="hero-content">
+
+        <p class="section-subtitle">Baju kotor menumpuk gak sempat nyuci ?</p>
+
+        <h2 class="h1 hero-title">Bawa ke laundry terdekat </h2>
+
+        <p class="hero-text">
+          Hidup itu pasti banyak cobaan, Kalau banyak cucian bawa ke Laundry
+          terdekat dengan cara mengakses SIGLaundry
+        </p>
+
+        <a href="#" class="btn btn-primary">
+          <span class="span">Selengkapnya</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+      </div>
+
+      <figure class="hero-banner">
+
+        <img src="./assets/images/svg.svg" width="500" height="800" loading="lazy" alt="hero image" class="w-100">
+
+
+      </figure>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- 
+        - #CATEGORY
+      -->
+
+  <section class="section category" aria-label="category">
+    <div class="container">
+
+
+
+      <h2 class="h2 section-title">SIGLaundry</h2>
+
+      <p>Laundry merupakan salah satu pelayanan jasa di bidang cuci mencuci pakaian dengan
+        memiliki jenis cucian yang telah ditetapkan harga oleh pihak penyedia jasa dan waktu lama cucian
+        biasanya ditentukan oleh penyedia dengan batas minimal dan maksimal selesainya cucian yang dipesan
+        pelanggan.</p><br>
+
+      <p>Sistem Informasi Geografis / GIS (Geographic Information System) adalah sistem
+        informasi khusus yang
+        mengelola data yang memiliki informasi spasial (bereferensi keruangan). Atau dalam arti yang lebih sempit,
+        adalah sistem komputer yang memiliki kemampuan untuk membangun, menyimpan, mengelola dan menampilkan
+        informasi bereferensi geografis, misalnya data yang diidentifikasi menurut lokasinya</p><br>
+
+      <p>Perkembangan pemanfaatan data spasial dalam dekade belakangan ini meningkat dengan sangat drastis. Hal
+        ini berkaitan dengan meluasnya pemanfaatan Sistem Informasi Geografis (SIG) dan perkembangan teknologi
+        dalam memperoleh, merekam, dan mengumpulkan data yang bersifat keruangan (spasial). Sistem informasi atau
+        data yang berbasiskan keruangan pada saat ini merupakan salah satu elemen yang sangat penting, karena
+        berfungsi sebagai pondasi dalam melaksanakan dan mendukung berbagai macam aplikasi. Sebagai contoh
+        aplikasi yang dapat dibuat dengan dasar SIG adalah pemetaan sekolah, pemetaan lokasi laundry</p><br>
+
+      <p>SIGLaundry merupakan sistem informasi geografis pemetaan lokasi laundry yang ada di kab.soppeng khususnya
+        kec.lalabata. Di era globalisasi ini perkembangan ilmu pengetahuan dan teknologi informasi berkembang sangat
+        pesat, sehingga memudahkan masyarakat melakukan aktifitas. Kehadiran teknologi tersebut dimaksudkan
+        untuk mencapai hasil yang lebih baik dengan lebih efisien, efektif, serta ketepatan penggunaan. Salah satu
+        teknologi yang berkembang pesat adalah Sistem informasi geografis, seiring banyaknya masyarakat di Kota
+        kab.soppeng yang
+        kesulitan mencari tempat laundry dan minimnya media promosi bagi pengusaha laundry dengan adanya
+        sistem informasi geografis laundry berbasis web ini diharapkan dapat membantu masyarakat untuk menemukan
+        tempat
+        laundry yang terdekat dan memaksimalkan tindakan promosi, dengan cara
+        lebih efisien melalui website. sistem informasi geografis laundry ini dapat sebagai media promosi modern
+        bagi pemilik
+        usaha laundry. sistem informasi geografis laundry ini dapat membantu masyarakat umum dalam mengatasi
+        kesulitan mencari
+        tempat laundry yang tepat serta efisen</p>
+
+
+    </div>
+  </section>
+
+
+
+  <!-- 
+        - #EVENT
+      -->
+
+  <section class="section event" id="event" aria-label="event">
+    <div class="container">
+
+      <p class="section-subtitle">Laundry</p>
+
+      <h2 class="h2 section-title">Kec.lalabata</h2>
+
+      <ul class="grid-list">
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/suryalaundry.jpg" width="370" height="250" loading="lazy"
+                alt="Innovation & Technological Entrepreneurship Team" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-12-04">Surya Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Salotungo</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Surya Laundry </a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/surya.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/indahlaundry.jpg" width="370" height="250" loading="lazy"
+                alt="Virtual Spring Part-time Jobs Fair for Student" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-10-30">Indah Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Pakkanrebete</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Indah Laundry</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/indah.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/afifalaundry.jpg" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">Afifa Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Kemakmuran</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Afifa Laundry</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/afifa.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/malakalaundry.jpg" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">Malaka Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Malaka</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Malaka Laundry</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/malaka.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/berkahlaundry.png" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">Berkah Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Ujung</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Berkah Laundry</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/berkah.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/laundrydaffa.jpg" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">Laundry Daffa</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Lorong temmappafi</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Laundry Dafaa</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/daffa.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/londrix.jpg" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">Londrix</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Merdeka</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Londrix</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/londrix.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/almahyralaundry.jpg" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">Almahyra Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Merdeka</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Almahyra Laundry</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/almahyra.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/naylalaundry.jpg" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">Nayla Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Bila</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Nayla Laundry</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/nayla.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/fridalaundry.jpg" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">Frida Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Kesatria</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Frida Laundry</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/frida.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/dewilaundry.jpg" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">Dewi Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Abd muis</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Dewi Laundry</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/dewi.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/njlaundry.jpg" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">NJ Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Malaka</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">NJ Laundry</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/nj.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="event-card">
+
+            <figure class="card-banner">
+              <img src="./assets/images/lululaundry.jpg" width="370" height="250" loading="lazy"
+                alt="Explorations of Regional Chief Executive Network" class="img-cover">
+            </figure>
+
+            <time class="badge" datetime="2022-09-18">Lulu Laundry</time>
+
+            <div class="card-content">
+
+              <address class="card-address">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Jl. Jerae</span>
+              </address>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Lulu Laundry</a>
+              </h3>
+
+              <a href="./laundryy/datalaundry/lulu.html" class="btn-link">
+                <span class="span">Selengkapnya</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">SIGLaundry</a>
+
+          <p class="section-text">
+            sistem informasi geografis pemetaan lokasi laundry yang ada di kab.soppeng khususnya kec.lalabata.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Menu</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Peta/lokasi</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Tentang kami</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Sejarah</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Kontak</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              Kab.soppeng, kec.lalabata
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="#" class="footer-link">081xxxxxxxxx</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="#" class="footer-link">081xxxxxxxxx</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="#" class="footer-link">xxxxxxx</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2022 SIGLaundry. All Rights Reserved by <a href="#" class="copyright-link">kelompok 9</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
