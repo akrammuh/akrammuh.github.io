@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1" />
+  <title>helloakram.id — maintenance</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Situs sedang dalam proses pemeliharaan sistem — helloakram.id" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --aqua: #3fb6c9;
+      --aqua-deep: #1f9aa7;
+      --bg: linear-gradient(180deg,#071018 0%, #0b1a23 40%, #07272b 100%);
+      --muted: rgba(255,255,255,0.65);
+      color-scheme: dark;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: var(--bg);
+      color:#eaf6f7;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+
+    .container{
+      width:100%;
+      max-width:980px;
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:32px;
+      align-items:center;
+    }
+
+    .hero{padding:32px;}
+
+    .badge{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      padding:10px 14px;
+      border-radius:999px;
+      font-weight:600;
+      color:var(--aqua);
+    }
+
+    h1{
+      font-family:'Playfair Display', serif;
+      font-size:44px;
+      line-height:1.2;
+      margin:18px 0 12px 0;
+      color: #f5fcfd;
+    }
+
+    p.lead{
+      margin:0 0 22px 0;
+      color:var(--muted);
+      font-size:18px;
+      max-width:720px;
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding:28px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,0.04);
+      min-width:260px;
+    }
+
+    .logo{
+      height:56px;
+      width:56px;
+      border-radius:12px;
+      display:inline-grid;
+      place-items:center;
+      font-weight:800;
+      font-size:20px;
+      color:#042a2d;
+      background: linear-gradient(135deg, var(--aqua), var(--aqua-deep));
+    }
+
+    .progress-wrapper{
+      position:relative;
+      margin:18px 0 30px 0;
+    }
+    .progress{
+      height:10px;
+      background: rgba(255,255,255,0.03);
+      border-radius:999px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .progress > i{
+      display:block;
+      height:100%;
+      width:27%;
+      background: linear-gradient(90deg,var(--aqua-deep),var(--aqua));
+      transition:width 1s ease-out;
+    }
+    .progress-num{
+      position:absolute;
+      top:-18px;
+      right:0;
+      font-size:13px;
+      font-weight:700;
+      color:#fff;
+      pointer-events:none;
+    }
+
+    .note{font-size:13px;color:rgba(255,255,255,0.55);margin-top:12px;}
+
+    @media (max-width:980px){
+      body{padding:20px;}
+      .container{grid-template-columns:1fr;gap:24px;}
+      h1{font-size:36px}
+      .card{order:-1;width:100%}
+    }
+    @media (max-width:600px){
+      h1{font-size:30px}
+      p.lead{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="badge">🚧 MAINTENANCE</div>
+      <h1 id="site-title"></h1>
+      <p class="lead">Saat ini helloakram.id sedang dalam proses pemeliharaan sistem. Silakan kunjungi kembali dalam beberapa saat...</p>
+      <p style="margin-top:22px;color:rgba(255,255,255,0.55); font-size: 18px;">Terima kasih atas kesabaran dan pengertian Anda.</p>
+    </section>
+
+    <aside class="card">
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:18px">
+        <div class="logo">HA</div>
+        <div>
+          <div style="font-weight:700">helloakram.id</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.56)">Versi Baru Segera Hadir</div>
+        </div>
+      </div>
+
+      <div class="progress-wrapper">
+        <div class="progress">
+          <i id="prog"></i>
+        </div>
+        <span class="progress-num">27%</span>
+      </div>
+
+      <p class="note">Info lebih lanjut? Hubungi kami</p>
+      <footer style="display:flex;justify-content:space-between;margin-top:22px;font-size:13px;color:rgba(255,255,255,0.52)">
+        <a href="mailto:say@helloakram.id" style="text-decoration:none;color:var(--aqua);font-weight:700">Email</a>
+        <div style="opacity:0.9;font-weight:600">v2.0</div>
+      </footer>
+    </aside>
+  </main>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  document.onkeydown = function(e) {
+    if (
+      e.keyCode === 123 ||
+      (e.ctrlKey && e.shiftKey && e.keyCode === 'I'.charCodeAt(0)) ||
+      (e.ctrlKey && e.shiftKey && e.keyCode === 'C'.charCodeAt(0)) ||
+      (e.ctrlKey && e.shiftKey && e.keyCode === 'J'.charCodeAt(0)) ||
+      (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) ||
+      (e.ctrlKey && e.shiftKey && e.keyCode === 'K'.charCodeAt(0)) ||
+      (e.ctrlKey && e.shiftKey && e.keyCode === 'E'.charCodeAt(0)) ||
+      (e.ctrlKey && e.altKey && e.keyCode === 'I'.charCodeAt(0))
+    ) {
+      return false;
+    }
+  };
+  </script>
+</body>
+</html>
